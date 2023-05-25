@@ -1,0 +1,309 @@
+/**
+*** SIMPLE GRID
+*** (C) ZACH COLE 2016
+**/
+
+
+/* ROOT FONT STYLES */
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  clear: both;
+}
+
+.row [class^="col"] {
+  float: left;
+/*  padding: 0.2rem 2%; */
+  min-height: 0.125rem;
+  box-sizing: border-box;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 100%;
+}
+
+.col-1-sm {
+  width: 8.33%;
+}
+
+.col-2-sm {
+  width: 16.66%;
+}
+
+.col-3-sm {
+  width: 25%;
+}
+
+.col-4-sm {
+  width: 33.33%;
+}
+
+.col-5-sm {
+  width: 41.66%;
+}
+
+.col-6-sm {
+  width: 50%;
+}
+
+.col-7-sm {
+  width: 58.33%;
+}
+
+.col-8-sm {
+  width: 66.66%;
+}
+
+.col-9-sm {
+  width: 75%;
+}
+
+.col-10-sm {
+  width: 83.33%;
+}
+
+.col-11-sm {
+  width: 91.66%;
+}
+
+.col-12-sm {
+  width: 100%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.hidden-sm {
+    display: none;
+}
+
+
+@media only screen and (min-width: 45em) and (max-width: 64em) {  /* 720px */
+
+
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .col-1-md {
+    width: 8.33%;
+  }
+
+  .col-2-md {
+    width: 16.66%;
+  }
+
+  .col-3-md {
+    width: 25%;
+  }
+
+  .col-4-md {
+    width: 33.33%;
+  }
+
+  .col-5-md {
+    width: 41.66%;
+  }
+
+  .col-6-md {
+    width: 50%;
+  }
+
+  .col-7-md {
+    width: 58.33%;
+  }
+
+  .col-8-md {
+    width: 66.66%;
+  }
+
+  .col-9-md {
+    width: 75%;
+  }
+
+  .col-10-md {
+    width: 83.33%;
+  }
+
+  .col-11-md {
+    width: 91.66%;
+  }
+
+  .col-12-md {
+    width: 100%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+
+  .hidden-md {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 64em) { /* ca. 1024px */
+  .container {
+    width: 95%;
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+  .hidden-sm {
+    display: block;
+  }
+
+  .hidden-sm, .hidden-md {
+    display: block;
+  }
+
+  .hidden-full {
+    display: none;
+  }
+}

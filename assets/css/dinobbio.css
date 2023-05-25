@@ -1,0 +1,334 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #363636;
+  	text-align: left;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    background-color: #fbfbfb;
+}
+
+/* >>> im simple Grid padding auskommentiert! <<< */
+
+.row [class^="col"] {
+/*  padding: 0; */
+}
+
+
+.page {display: block; max-width: 120em; margin: 0 auto;}
+header, footer {position: fixed; width: 100%; z-index: 10;}
+header {top: 0; }
+content { position: unset; padding-bottom: 1rem; overflow-y: auto; }
+content .page {padding-top: 10rem;}
+footer {bottom: 0;  }
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1%;
+    text-rendering: optimizeLegibility;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin: 1%;
+    text-rendering: optimizeLegibility;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-weight: 100;
+    margin: 1%;
+    text-rendering: optimizeLegibility;
+}
+
+h4 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    margin: 1%;
+    text-rendering: optimizeLegibility;
+}
+
+h5 {
+    font-size: 1.375rem;
+    font-weight: 300;
+    margin: 1%;
+    text-rendering: optimizeLegibility;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 1% 1% 2% 1%;
+    text-rendering: optimizeLegibility;
+}
+
+p > a {
+    text-decoration: underline #363636;
+    color: #363636;
+    background-color: #d8dAd8;
+}
+
+h1, h2, h3, h4, h5, p, ul {
+    padding: 0 2%;
+}
+
+.main-menue a {color: #363636;}
+
+#close-button {
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  /* Logo und 1. Menue */
+
+.row > .header-color {
+    background: linear-gradient(to left, #d47827, #85b33d, #b62981);
+    max-height: 0.1rem;
+    padding-top: 0.5em;
+    margin: 0 auto 0.5em auto;
+    width: 95%;
+    float: none;
+  }
+
+.logo, .logo-text {
+    margin-bottom: 0.2em;
+}
+
+#admin-menue {
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #f0f0f0;
+  text-rendering: optimizeLegibility;
+}
+
+.logo img {
+  height: 2.8rem;
+  padding: 0.3em 1.3em 0.5em 2em;
+  float: left;
+}
+
+.logo-name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding: 0 0.75em 0 0;
+  float: left;
+}
+
+.logo-text {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  padding: 1.15em 0 0 0;
+  float: left;
+}
+
+.admin {
+  margin-top: 0.5em;
+}
+
+.admin div {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  float: right;
+  margin-left: 0.5rem;
+}
+
+  #privacy {
+    padding: 1.15em 2em 0 0;
+  }
+
+  #impress {
+    padding: 1.15em 0 0 4em;
+  }
+
+  #language {
+    padding: 0.15em 0 0 0;
+  }
+
+.navbar-admin div {
+  padding: 0.6em 1.3em;
+}
+
+.navbar-admin .nav-item {
+  border-top: 0.25rem solid #f0f0f0;
+}
+
+.navbar-admin .active {
+  background-color: #d8dAd8;
+  border-top: 0.25rem solid #b62981;
+}
+
+  /* 2. Menue:  */
+
+#main-menue {font-size: 1em; font-weight: 100; text-rendering: optimizeLegibility;}
+#main-menue > ul {float: right; padding-right: 0; }
+
+.main-menue { margin: 0;}
+
+.main-menue-nav {
+  margin: 0;
+  background-color: #fbfbfb;
+  border-bottom: 0.1em solid #d8dAd8;
+}
+
+nav button {display: none;}
+nav ul { list-style: none;}
+nav li { margin: 0; display: inline-block;}
+nav a { text-decoration: none; }
+
+.main-menue .nav-item {
+  padding: 0.5em 0.8em;
+  border-top: 0.25rem solid #fbfbfb;
+}
+
+.nav-item:focus, .nav-item:hover, .nav-item:active { border-top: 0.25rem solid #d47827; }
+
+.main-menue .active {
+  padding: 0.5em 0.8em;
+  background-color: #d8dAd8;
+  border-top: 0.25rem solid #b62981;
+}
+
+
+  /*Content*/
+
+.title h1 div:nth-child(1) {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 2.5vw;
+  font-weight: 200;
+  margin: 1em 0 0.8em 0;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.title h1 div:nth-child(3) {
+  font-family: 'LucidaConsole', sans-serif;
+  font-size: 3.3vw;
+  font-weight: 400;
+  text-align: center;
+  color: #fbfbfb;
+  margin: 0.8em 0.5em 1em 0.5em;
+}
+
+.title-line {
+  margin: 0.5% 30%;
+  padding-top: 0.1em;
+  background-color: #fbfbfb;
+}
+
+.title {
+  background-image: url(../../images/1_title_Slider-dinobbio.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (min-width: 120em) {  /* ab 120em */
+  .title h1 div:nth-child(1) {
+    font-size: 2.99rem;
+  }
+
+  .title h1 div:nth-child(3) {
+    font-size: 3.95rem;
+    }
+
+  .title-line {
+    margin: 0.5% 30%;
+    padding-top: 0.1em;
+  }
+}
+
+
+
+.content-left, .content-center { margin-top: 1.6rem; margin-bottom: 4rem;}
+
+.content-left h2 {
+  margin-right: 1.8rem;
+  padding-top: 1rem;
+  border-top: 0.5rem solid #85b33d;
+  margin-top: 0;
+}
+
+.page-title {
+  margin-left: 1.8rem;
+}
+
+.content-center div:first-child h3 {
+  margin-right: 1rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  border-top: 0.5rem solid #85b33d;
+  margin-top: 0;
+}
+
+.content-center div:first-child {
+  padding-right: 1.8rem;
+}
+
+.content-center div:nth-child(2) {
+  padding-left: 1.8rem;
+  padding-top: 1rem;
+  border-top: 0.5rem solid #fbfbfb;
+}
+
+ /* Partner */
+
+ .row > .partners-color {
+     background: linear-gradient(to right, #d47827, #85b33d, #b62981);
+     margin: 1em auto 0 auto;
+     padding-top: 0.5rem;
+     width: 95%;
+     float: none;
+   }
+
+.partners-logo {
+  padding: 1rem 2.2rem;
+  margin-bottom: 1vw;
+  background-color: #d8dAd8;
+}
+
+.logo-htwk img, .logo-unesp img, .logo-usp img {
+  float: left;
+}
+
+.logo-htwk img { width: 20%; margin: 5% 1% 5% 10%;}
+
+.logo-unesp img { width: 25%; margin: 5% 1% 5% 10%;}
+
+.logo-usp img { width: 15%; margin: 5% 1% 5% 10%;}
+
+.logo-htwk p, .logo-unesp p, .logo-usp p {
+  float: right;
+  font-size: 0.8rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.logo-htwk p { width: 60%;}
+
+.logo-unesp p { width: 55%;}
+
+.logo-usp p { width: 65%;}
+
+/* footer-funding */
+
+.footer-funding {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #4078d9;
+}
+
+
+/* row */
+
+
+[class^="col-"] , [class*=" col-"] {
+/*    border: 1px solid red; */
+    box-sizing: border-box;
+    display: center;
+}
