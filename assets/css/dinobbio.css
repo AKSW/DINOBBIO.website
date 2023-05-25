@@ -17,6 +17,8 @@ body {
 }
 
 
+.en, .de, .pt {display: none}
+
 .page {display: block; max-width: 120em; margin: 0 auto;}
 header, footer {position: fixed; width: 100%; z-index: 10;}
 header {top: 0; }
