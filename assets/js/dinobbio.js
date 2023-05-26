@@ -110,12 +110,18 @@ lang_selectors.forEach(function(lang) {
 
 		});
 		const newURL = window.location.href.split('?')[0]+'?lang='+event.target.innerHTML;
-		const pageTitle = 'DINOBBIO - '+ document.querySelector('.page-title .active');
-		console.log(pageTitle)
-		document.querySelector('title').innerHTML=pageTitle;
-		// Add the new URL to the browser's history
-		history.pushState(null, pageTitle, newURL);
-
+		const page_titles = document.querySelectorAll('.page-title span');
+		page_titles.forEach(function(page_title) {
+			console.log(window.getComputedStyle(page_title).display);
+			
+	    if (window.getComputedStyle(page_title).display === 'block') {
+	    		pageTitle = 'DINOBBIO - '+page_title.innerHTML 
+					document.querySelector('title').innerHTML=pageTitle;
+					// Add the new URL to the browser's history
+					history.pushState(null, pageTitle, newURL);
+			}
+		});
+		
 
   });
 });
@@ -129,11 +135,17 @@ if (window.location.href.split('?')[1]=='lang=de') {
 	const lang_selectors = document.querySelectorAll('#language .nav-item');
 	lang_selectors.forEach(function(lang) {if (lang.innerHTML=='de') {lang.dispatchEvent(clickEvent)}});
 }
-if (window.location.href.split('?')[1]=='lang=pt') {
+else if (window.location.href.split('?')[1]=='lang=pt') {
 	const clickEvent = new Event('click');
 	const lang_selectors = document.querySelectorAll('#language .nav-item');
 	lang_selectors.forEach(function(lang) {if (lang.innerHTML=='pt') {lang.dispatchEvent(clickEvent);}});
 }
+else {
+	const clickEvent = new Event('click');
+	const lang_selectors = document.querySelectorAll('#language .nav-item');
+	lang_selectors.forEach(function(lang) {if (lang.innerHTML=='en') {lang.dispatchEvent(clickEvent);}});
+}
+
 
 // slider background images
 
