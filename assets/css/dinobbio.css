@@ -24,7 +24,7 @@ header {top: 0; }
 content { position: unset; padding-bottom: 1rem; overflow-y: auto; }
 content .page {padding-top: 10rem;}
 footer {bottom: 0;  }
-.page {display: block; max-width: 100rem; margin: 0 auto;}
+.page {display: block; max-width: 120em; margin: 0 auto;}
 
 h1 {
     font-size: 3rem;
@@ -224,20 +224,20 @@ nav a { text-decoration: none; }
 }
 
 .title, .title.nr1 {
-  background-image: url(../../images/1_title_Slider-dinobbio.png);
+  background-image: url(../../images/1_title-HG_Slider-dinobbio_2023.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
 .title.nr2 {
-  background-image: url(../../images/1_title_Slider-dinobbio.png), url(../../images/2_chemie_Slider-dinobbio-pur.png);
+  background-image: url(../../images/1_title-HG_Slider-dinobbio_2023.png), url(../../images/2_Chemie_Slider-nur-Grafik-dinobbio_2023.png);
   background-blend-mode: overlay;
   background-size: cover, contain;
 }
 
 .title.nr3 {
-  background-image: url(../../images/1_title_Slider-dinobbio.png), url(../../images/3_Code_Slider-dinobbio-pur.png);
+  background-image: url(../../images/1_title-HG_Slider-dinobbio_2023.png), url(../../images/3_Code_Slider-nur_grafik-dinobbio_2023.png);
   background-blend-mode: overlay;
   background-size: cover, contain;
 }
@@ -245,11 +245,11 @@ nav a { text-decoration: none; }
 
 @media only screen and (min-width: 120em) {  /* ab 120em */
   .title h1 div:nth-child(1) {
-    font-size: 2.99rem;
+    font-size: 3rem;
   }
 
   .title h1 div:nth-child(3) {
-    font-size: 3.95rem;
+    font-size: 3rem;
     }
 
   .title-line {
@@ -283,13 +283,24 @@ nav a { text-decoration: none; }
   hyphens: auto;
 }
 
-.content-center .row div:first-child {
+.content-center .row > div:first-child {
   padding-right: 1.8rem;
 }
 
-.content-center .row div:nth-child(2) {
+.content-center .row > div:nth-child(2) {
   padding-left: 1.8rem;
 }
+
+.content-center .row > div:first-child.float-right {
+  padding-left: 1.8rem;
+}
+
+.content-center .row > div:nth-child(2).float-right {
+  padding-right: 1.8rem;
+}
+
+.float-right {float: right!important}
+
 
  /* Partner */
 
