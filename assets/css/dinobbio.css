@@ -19,12 +19,12 @@ body {
 
 .en, .de, .pt {display: none}
 
-.page {display: block; max-width: 120em; margin: 0 auto;}
 header, footer {position: fixed; width: 100%; z-index: 10;}
 header {top: 0; }
 content { position: unset; padding-bottom: 1rem; overflow-y: auto; }
 content .page {padding-top: 10rem;}
 footer {bottom: 0;  }
+.page {display: block; max-width: 100rem; margin: 0 auto;}
 
 h1 {
     font-size: 3rem;
@@ -226,18 +226,20 @@ nav a { text-decoration: none; }
 .title, .title.nr1 {
   background-image: url(../../images/1_title_Slider-dinobbio.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 
 .title.nr2 {
   background-image: url(../../images/1_title_Slider-dinobbio.png), url(../../images/2_chemie_Slider-dinobbio-pur.png);
   background-blend-mode: overlay;
+  background-size: cover, contain;
 }
 
 .title.nr3 {
   background-image: url(../../images/1_title_Slider-dinobbio.png), url(../../images/3_Code_Slider-dinobbio-pur.png);
   background-blend-mode: overlay;
+  background-size: cover, contain;
 }
 
 
@@ -264,7 +266,7 @@ nav a { text-decoration: none; }
   background: #85b33d;
   max-height: 0.1rem;
   padding-top: 0.5em;
-  margin: 0 2% 0.5em;
+  margin: 1em 2% 0.5em;
   float: none;
 }
 .content-left h2 {
