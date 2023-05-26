@@ -9,10 +9,10 @@ nav_links.forEach(function(nav_link) {
 		nav_link.innerHTML=set_languages('projects','Projekte','projetos');
 	}
 	if (href=='publications.html') {
-		nav_link.innerHTML=set_languages('publications','Publikationen','publicações');
+		nav_link.innerHTML=set_languages('publicat&shy;ions','Publika&shy;tionen','publica&shy;ções');
 	}
 	if (href=='talks.html') {
-		nav_link.innerHTML=set_languages('talks','Vorträge','apresentações');
+		nav_link.innerHTML=set_languages('talks','Vorträge','apresent&shy;ações');
 	}
 	if (href=='partners.html') {
 		nav_link.innerHTML=set_languages('partners','Partner','parceiro');
@@ -24,7 +24,7 @@ nav_links.forEach(function(nav_link) {
 		nav_link.innerHTML=set_languages('contact','Kontakt','contato');
 	}
 	if (href=='privacy.html') {
-		nav_link.innerHTML=set_languages('privacy','Datenschutz','proteção dos dados');
+		nav_link.innerHTML=set_languages('privacy','Daten&shy;schutz','proteção dos dados');
 	}
 
 	//make this internal links loadable with js
@@ -135,5 +135,22 @@ if (window.location.href.split('?')[1]=='lang=pt') {
 	lang_selectors.forEach(function(lang) {if (lang.innerHTML=='pt') {lang.dispatchEvent(clickEvent);}});
 }
 
+// slider background images
 
+setTimeout(function() {
+	
+
+	setInterval(function() {
+	
+		var nr = document.querySelector('.title').getAttribute('slide-nr');
+		if (nr==null) nr=1;
+		nr++; if (nr==4) nr=1;
+		document.querySelector('.title').setAttribute('slide-nr',nr);
+		document.querySelector('.title').setAttribute('class','col-8 title nr'+nr);
+		document.querySelector('.title').removeAttribute('style');
+	}, 5000);
+  
+
+  }, 10000);
+  
 
