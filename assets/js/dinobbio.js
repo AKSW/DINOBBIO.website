@@ -110,7 +110,7 @@ lang_selectors.forEach(function(lang) {
 
 		});
 		const newURL = window.location.href.split('?')[0]+'?lang='+event.target.innerHTML;
-		const pageTitle = 'DINOBBIO - '+ document.querySelectorAll('.page-title .active');
+		const pageTitle = 'DINOBBIO - '+ document.querySelector('.page-title .active');
 		console.log(pageTitle)
 		document.querySelector('title').innerHTML=pageTitle;
 		// Add the new URL to the browser's history
