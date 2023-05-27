@@ -76,6 +76,12 @@ nav_links.forEach(function(nav_link) {
 
 });
 
+// load different languages main image
+
+document.querySelector('.title>h1>div:nth-child(1)').innerHTML=set_languages('Sustainable use of Brazilian Biodiversity','Nachhaltige Nutzung der brasilianischen Biodiversität','Uso sustentável da biodiversidade brasileira');
+document.querySelector('.title>h1>div:nth-child(3)').innerHTML=set_languages('Using Linked Data for Natural Product Discovery','Linked Data für die Erforschung von Naturprodukten','Uso de dados vinculados para descoberta de produtos naturais');
+
+
 function set_languages(en,de,pt) {
 	return '<span class="en">'+en+'</span><span class="de">'+de+'</span><span class="pt">'+pt+'</span>';
 }
