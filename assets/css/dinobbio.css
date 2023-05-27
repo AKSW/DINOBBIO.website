@@ -74,10 +74,6 @@ p > a {
     background-color: #d8dAd8;
 }
 
-h1, h2, h3, h4, h5, p, ul {
-    padding: 0 2%;
-}
-
 .main-menue a {color: #363636;}
 
 #close-button {
@@ -264,9 +260,10 @@ nav a { text-decoration: none; }
 
 .content-line {
   background: #85b33d;
-  max-height: 0.1rem;
-  padding-top: 0.5em;
-  margin: 1em 2% 0.5em;
+  height: 0.25rem;
+  width: 35%;
+  margin-left:1.8rem;
+  margin-top: 1rem;
   float: none;
 }
 .content-left h2 {
@@ -320,6 +317,11 @@ nav a { text-decoration: none; }
 
 .logo-htwk img, .logo-unesp img, .logo-usp img {
   float: left;
+}
+
+img.logo {
+  width:20%;
+  padding:1em;
 }
 
 .logo-htwk img { width: 20%; margin: 5% 1% 5% 10%;}
