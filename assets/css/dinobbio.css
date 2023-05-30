@@ -8,6 +8,7 @@ body {
     margin: 0;
     text-rendering: optimizeLegibility;
     background-color: #fbfbfb;
+    overflow-x:hidden;
 }
 
 /* >>> im simple Grid padding auskommentiert! <<< */
@@ -21,8 +22,9 @@ body {
 
 header, footer {position: fixed; width: 100%; z-index: 10;}
 header {top: 0; }
-content { position: unset; padding-bottom: 1rem; overflow-y: auto; overflow-x: hidden }
+content { width:100vw; position: unset; padding-bottom: 1rem; overflow-y: visible; overflow-x: hidden;}
 content .page {padding-top: 10rem;}
+.row > div {overflow-x: hidden;}
 footer {bottom: 0;  }
 .page {display: block; max-width: 120em; margin: 0 auto;}
 
@@ -198,10 +200,10 @@ nav a { text-decoration: none; }
 }
 
 #burger-menu {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
+  display: flex; 
+  align-items: center;  
   position: fixed;
-  top: 1rem;
+  top: 2rem;
   right: 1rem;
   width: 2.25rem;
   height: 2.25rem;
@@ -240,33 +242,29 @@ nav a { text-decoration: none; }
   top: 0; transform: rotate(90deg);
 }
 
-#navbar-toggler~#main-menu {
-  display:none;
-}
-#navbar-toggler:checked~#main-menu {
+#main-menu {
   display:block;
 }
+#nav-toggler, #burger-menu {
+  display:none;
+}
 
-#main-menu {transition: transform 1s ease-in-out;}
 
-@media only screen and (min-width: 45em) {  /* 720px */
-  #main-menu {
+@media only screen and (max-width: 45em) {  /* mobile */
+  #nav-toggler, #burger-menu {
     display:block;
   }
-  #nav-toggler, #burger-menu {
+  
+  #navbar-toggler~#main-menu {
     display:none;
   }
-
-  h2,h3 {font-size: 1.875rem}
-  h4,h5 {font-size: 1.375rem}
+  #navbar-toggler:checked~#main-menu {
+    display:block;
+  }
+  
+  #main-menu {transition: transform 1s ease-in-out;}
+  
 }
-#navbar-toggler~#main-menu {
-  display:none;
-}
-#navbar-toggler:checked~#main-menu {
-  display:block;
-}
-
 
 /*Content*/
 
