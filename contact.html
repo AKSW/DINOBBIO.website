@@ -21,9 +21,9 @@
     <header>
       <div class="page">
       <!-- Nav Bar -->
-          <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+          <nav id="navbar">
 
-          <div id="admin-menue" class="row">
+          <div id="menu" class="row">
             <div class="col-12 header-color">
             </div>
             <div class="col-6 logo">
@@ -31,31 +31,25 @@
               <div class="logo-name">
                   DINOBBIO
               </div>
-              <div class="logo-text">
+              <div class="logo-text hidden-sm hidden-md">
                 Discovering New Natural Inspired<br/>Products from Brazilian Biodiversity
               </div>
 
             </div>
-            <div class="col-6 admin">
-              <div id="language" class="navbar-admin">
-              </div>
-
+            <div id="language" class="col-6">
             </div>
           </div>
 
 
-          <div class="row main-menue-nav">
+          <div class="row main-menu-nav">
       <!-- Navbar Toggle für mobile-->
-            <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar top-bar"></span>
-              <span class="icon-bar middle-bar"></span>
-              <span class="icon-bar bottom-bar"></span>
-            </button>
-            <div class="col-2"></div>
-            <div class="col-8 collapse navbar-collapse text-right" id="main-menue">
-              <ul class="navbar-nav main-menue ml-auto flex-nowrap">
+            <div class="col-2 hidden-sm hidden-md"></div>
+            <input id="navbar-toggler" type="checkbox" style="display:none"/>
+            <label id="burger-menu" for="navbar-toggler" class="hidden-full hidden-md"><span></span></label>
+            <div class="col-8 col-12-md col-12-sm right" id="main-menu">
+                <ul class="navbar-nav main-menu ml-auto flex-nowrap">
       <!-- About Startseite -->
+
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">
                     about
@@ -68,7 +62,7 @@
                   </a>
               </li>
 
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link" href="publications.html">
                   publications
                 </a>
@@ -107,7 +101,7 @@
 
               </ul>
             </div>
-            <div class="col-2"></div>
+            <div class="col-2 hidden-sm hidden-md"></div>
           </div>
         </nav>
       </div>
@@ -115,15 +109,15 @@
     <content>
       <div class="page">
         <div class="row">
-          <div class="col-2"></div>
-          <div class="col-8 title">
+          <div class="col-2 hidden-sm hidden-md"></div>
+          <div class="col-8 col-12-md title">
             <h1>
               <div>Sustainable use of Brazilian Biodiversity</div>
-              <div class="title-line"></div>
+              <div class="title-line hidden-sm"></div>
               <div>Using Linked Data for</br>Natural Product Discovery</div>
             </h1>
           </div>
-          <div class="col-2"></div>
+          <div class="col-2 hidden-sm hidden-md"></div>
         </div>
         <!-- colored line before content-->
         <div class="row">
@@ -132,34 +126,34 @@
           </div>
           <div class="col-1"></div>
           <div class="col-10">
-            <div class="content-line"></div>
+            <div class="content-line hidden-sm"></div>
           </div>
         </div>
         <div class="row">
           <div class="col-2 content-left">
             <h2 class="page-title">
-                contact
-              </h2>
-            </div>
-
-            <!--content-->
-            <div class="col-8 content-center">
-              <div class="row">
-                <div class="col-6">
-                  <h3>CONTACT 1</h3>
-                  <p>
-                  </p>
-                </div>
-                <div class="col-6">
-                  <h3>CONTACT 2</h3>
-                  <p>
-                  </p>
-                </div>
+              contact
+            </h2>
+          </div>
+          <!--content-->
+          <div class="col-8 content-center">
+            <div class="row">
+              <div class="col-6">
+                <h3>CONTACT 1</h3>
+                <p>
+                </p>
+              </div>
+              <div class="col-6">
+                <h3>CONTACT 2</h3>
+                <p>
+                </p>
               </div>
             </div>
-            <div class="col-2 content-right"></div>
           </div>
+          </div>
+          <div class="col-2 content-right"></div>
         </div>
+        <!--content-->
 
         <div class="row content-partners">
           <div class="col-12 partners-color">
@@ -215,4 +209,4 @@
     </footer>
   </body>
   <script src="assets/js/dinobbio.js"></script>
-</html>
+  </html>

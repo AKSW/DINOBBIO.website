@@ -177,7 +177,7 @@ setTimeout(function() {
 setInterval(function() {
 	const rect_header = document.querySelector('.main-menu-nav').getBoundingClientRect();
 	const rect_footer = document.querySelector('footer').getBoundingClientRect();
-	document.querySelector('content .page').setAttribute('style','padding: '+Math.trunc(rect_header.bottom)+'px 0px '+Math.trunc(rect_footer.height)+'px 0px');
+	document.querySelector('content .page').setAttribute('style','padding: '+Math.trunc(rect_header.bottom+10)+'px 0px '+Math.trunc(rect_footer.height)+'px 0px');
 }, 1000);
   
 
