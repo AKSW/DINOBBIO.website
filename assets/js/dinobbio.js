@@ -1,3 +1,6 @@
+// add language selectors
+document.getElementById('language').innerHTML='<div class="navbar-lang"><div class="nav-item">pt</div><div class="nav-item">de</div><div class="nav-item">en</div></div>';
+
 // load different languages for menu items
 const nav_links = document.querySelectorAll('.nav-item .nav-link');
 nav_links.forEach(function(nav_link) {
@@ -132,10 +135,9 @@ lang_selectors.forEach(function(lang) {
   });
 });
 
+
+
 // if lang parameter is set in url than trigger click on this
-
-console.log(window.location.href.split('?')[1]);
-
 if (window.location.href.split('?')[1]=='lang=de') {
 	const clickEvent = new Event('click');
 	const lang_selectors = document.querySelectorAll('#language .nav-item');
@@ -164,11 +166,18 @@ setTimeout(function() {
 		if (nr==null) nr=1;
 		nr++; if (nr==4) nr=1;
 		document.querySelector('.title').setAttribute('slide-nr',nr);
-		document.querySelector('.title').setAttribute('class','col-8 title nr'+nr);
+		document.querySelector('.title').setAttribute('class','col-8 col-12-md title nr'+nr);
 		document.querySelector('.title').removeAttribute('style');
 	}, 5000);
   
 
   }, 10000);
+  
+// fit page padding
+setInterval(function() {
+	const rect_header = document.querySelector('.main-menu-nav').getBoundingClientRect();
+	const rect_footer = document.querySelector('footer').getBoundingClientRect();
+	document.querySelector('content .page').setAttribute('style','padding: '+Math.trunc(rect_header.bottom)+'px 0px '+Math.trunc(rect_footer.height)+'px 0px');
+}, 1000);
   
 

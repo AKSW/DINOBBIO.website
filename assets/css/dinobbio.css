@@ -61,6 +61,11 @@ h5 {
     text-rendering: optimizeLegibility;
 }
 
+@media only screen and (min-width: 45em) and (max-width: 64em) {  /* 720px */
+  h1 { font-size: 2.25rem}
+  h2,h3 {font-size: 1.875rem}
+  h4,h5 {font-size: 1.375rem}
+}
 p {
     font-size: 1rem;
     font-weight: 100;
@@ -74,7 +79,7 @@ p > a {
     background-color: #d8dAd8;
 }
 
-.main-menue a {color: #363636;}
+.main-menu a {color: #363636;}
 
 #close-button {
     font-size: 2rem;
@@ -98,7 +103,7 @@ p > a {
     margin-bottom: 0.2em;
 }
 
-#admin-menue {
+#menu {
   font-size: 12px;
   font-weight: 300;
   background-color: #f0f0f0;
@@ -125,11 +130,12 @@ p > a {
   float: left;
 }
 
-.admin {
+#language .navbar-lang {
   margin-top: 0.5em;
+  margin-right: 0.5em;
 }
 
-.admin div {
+#language div {
   font-size: 0.8rem;
   line-height: 1rem;
   float: right;
@@ -144,56 +150,125 @@ p > a {
     padding: 1.15em 0 0 4em;
   }
 
-  #language {
+  #language .navbar-lang {
     padding: 0.15em 0 0 0;
   }
 
-.navbar-admin div {
+.navbar-lang div {
   padding: 0.6em 1.3em;
 }
 
-.navbar-admin .nav-item {
+.navbar-lang .nav-item {
   border-top: 0.25rem solid #f0f0f0;
 }
 
-.navbar-admin .active {
+.navbar-lang .active {
   background-color: #d8dAd8;
   border-top: 0.25rem solid #b62981;
 }
 
   /* 2. Menue:  */
 
-#main-menue {font-size: 1em; font-weight: 100; text-rendering: optimizeLegibility;}
-#main-menue > ul {float: right; padding-right: 0; }
+#main-menu {font-size: 1em; font-weight: 100; text-rendering: optimizeLegibility;  }
+#main-menu > ul {float: right; padding-right: 0; }
 
-.main-menue { margin: 0;}
+.main-menu { margin: 0;}
 
-.main-menue-nav {
+.main-menu-nav {
   margin: 0;
   background-color: #fbfbfb;
   border-bottom: 0.1em solid #d8dAd8;
 }
 
-nav button {display: none;}
 nav ul { list-style: none;}
 nav li { margin: 0; display: inline-block;}
 nav a { text-decoration: none; }
 
-.main-menue .nav-item {
+.main-menu .nav-item {
   padding: 0.5em 0.8em;
   border-top: 0.25rem solid #fbfbfb;
 }
 
 .nav-item:focus, .nav-item:hover, .nav-item:active { border-top: 0.25rem solid #d47827; }
 
-.main-menue .active {
+.main-menu .active {
   padding: 0.5em 0.8em;
   background-color: #d8dAd8;
   border-top: 0.25rem solid #b62981;
 }
 
+#burger-menu {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  z-index: 1;
+}
 
-  /*Content*/
+#burger-menu > span,
+#burger-menu > span::before,
+#burger-menu > span::after {
+  display: block;
+  position: absolute;
+  width: 2.25rem;
+  height: 2px;
+  background-color: #616161;
+  transition: 0.3s;
+}
+#burger-menu > span::before {
+  content: '';
+  top: -0.5rem;
+}
+#burger-menu > span::after {
+  content: '';
+  top: 0.5rem;
+}
+
+#navbar-toggler:checked ~ #burger-menu > span {
+  transform: rotate(45deg);
+}
+
+#navbar-toggler:checked ~ #burger-menu > span::before {
+  top: 0; transform: rotate(0);
+}
+
+#navbar-toggler:checked ~ #burger-menu > span::after {
+  top: 0; transform: rotate(90deg);
+}
+
+#navbar-toggler~#main-menu {
+  display:none;
+}
+#navbar-toggler:checked~#main-menu {
+  display:block;
+}
+
+#main-menu {transition: transform 1s ease-in-out;}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  #main-menu {
+    display:block;
+  }
+  #nav-toggler, #burger-menu {
+    display:none;
+  }
+
+  h2,h3 {font-size: 1.875rem}
+  h4,h5 {font-size: 1.375rem}
+}
+#navbar-toggler~#main-menu {
+  display:none;
+}
+#navbar-toggler:checked~#main-menu {
+  display:block;
+}
+
+
+/*Content*/
 
 .title h1 div:nth-child(1) {
   font-family: 'OpenSans', sans-serif;
@@ -256,7 +331,7 @@ nav a { text-decoration: none; }
 
 
 
-.content-left, .content-center { margin-top: 0.2rem; margin-bottom: 4rem;}
+.content-left, .content-center { margin-top: 0.2rem;}
 
 .content-line {
   background: #85b33d;
@@ -296,6 +371,10 @@ nav a { text-decoration: none; }
   padding-right: 1.8rem;
 }
 
+@media only screen and (max-width: 45em) {  /* mobile */
+  .content-center .row > div {padding-left: 1.8rem;  padding-right: 1.8rem;}
+
+}
 .float-right {float: right!important}
 
 
@@ -311,7 +390,6 @@ nav a { text-decoration: none; }
 
 .partners-logo {
   padding: 1rem 2.2rem;
-  margin-bottom: 1vw;
   background-color: #d8dAd8;
 }
 
