@@ -20,6 +20,7 @@ body {
 .en, .de, .pt {display: none}
 
 header, footer {position: fixed; width: 100%; z-index: 10;}
+header, content, footer {overflow-x:hidden!important}
 header {top: 0; }
 content { position: unset; padding-bottom: 1rem; overflow-y: auto; }
 content .page {padding-top: 10rem;}
