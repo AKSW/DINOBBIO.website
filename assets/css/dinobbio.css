@@ -125,6 +125,7 @@ p > a {
   float: left;
 }
 
+
 .logo-text {
   font-size: 0.7rem;
   line-height: 1rem;
@@ -286,6 +287,16 @@ nav a { text-decoration: none; }
   margin: 0.8em 0.5em 1em 0.5em;
 }
 
+@media only screen and (max-width: 45em) {  /* mobile */
+  .title h1 div:nth-child(1) {
+    font-size: 3.8vw;
+  }
+  
+  .title h1 div:nth-child(3) {
+    font-size: 4.4vw;
+  }
+
+}
 .title-line {
   margin: 0.5% 30%;
   padding-top: 0.1em;
