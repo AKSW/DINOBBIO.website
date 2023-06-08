@@ -38,7 +38,7 @@ nav_links.forEach(function(nav_link) {
 		// set active class for nav_links
 		const nav_links = document.querySelectorAll('.nav-item .nav-link');
 		nav_links.forEach(function(nav_link) {nav_link.parentNode.classList.remove('active')});
-		console.log(event.target.parentNode.getAttribute('href'));
+
 		event.target.parentNode.parentNode.classList.add('active');
 
 		// set page title
@@ -46,6 +46,7 @@ nav_links.forEach(function(nav_link) {
 		page_title.innerHTML=event.target.parentNode.innerHTML; 
 
 		// load page
+		console.log(event.target.parentNode.getAttribute('href'));
 		fetch(event.target.parentNode.getAttribute('href'))
 		.then(response => response.text())
   		.then(html => {
@@ -68,7 +69,15 @@ nav_links.forEach(function(nav_link) {
 			// Add the new URL to the browser's history
 			history.pushState(null, pageTitle, newURL);
 
-
+			console.log(newURL);
+			
+			if (newURL.split('.html')[0]=='blog') {
+				readRSS();				
+			}
+			if (newURL.split('.html')[0]=='index') {
+				readRSS();				
+			}
+			
  		})
   		.catch(error => {
     		console.error('Error loading HTML:', error);
@@ -82,7 +91,7 @@ nav_links.forEach(function(nav_link) {
 // load different languages main image
 
 document.querySelector('.title>h1>div:nth-child(1)').innerHTML=set_languages('Sustainable use of Brazilian Biodiversity','Nachhaltige Nutzung der brasilianischen Biodiversität','Uso sustentável da biodiversidade brasileira');
-document.querySelector('.title>h1>div:nth-child(3)').innerHTML=set_languages('Using Linked Data for Natural Product Discovery','Linked Data für die Erforschung von Naturprodukten','Uso de dados vinculados para descoberta de produtos naturais');
+document.querySelector('.title>h1>div:nth-child(3)').innerHTML=set_languages('Using Linked Data for Natural Product Discovery','Nutzung verknüpfter Daten zum Auffinden von Naturstoffen','Uso de dados vinculados para descoberta de produtos naturais');
 
 
 function set_languages(en,de,pt) {
@@ -110,7 +119,8 @@ lang_selectors.forEach(function(lang) {
 		// switch language
 		const lang_script = document.querySelector('style');
 		lang_script.innerHTML='.'+event.target.innerHTML+' {display:block}';
-		
+		console.log(event.target.innerHTML);
+
 		// add language link to nav-links
 		const nav_links = document.querySelectorAll('.nav-item .nav-link');
 		nav_links.forEach(function(nav_link) {
@@ -118,6 +128,21 @@ lang_selectors.forEach(function(lang) {
 			nav_link.setAttribute('href',href[0]+'?lang='+event.target.innerHTML)
 
 		});
+		// add language link to blog-links
+		const blog_links = document.querySelectorAll('.blog-link');
+		blog_links.forEach(function(blog_link) {
+			const href= blog_link.getAttribute('href').split('?');
+			blog_link.setAttribute('href',href[0]+'?lang='+event.target.innerHTML)
+
+		});
+		// add language link to news-links
+		const blog_news = document.querySelectorAll('.blog-news');
+		blog_news.forEach(function(blog_new) {
+			const href= blog_new.getAttribute('href').split('?');
+			blog_new.setAttribute('href',href[0]+'?lang='+event.target.innerHTML)
+		});
+
+
 		const newURL = window.location.href.split('?')[0]+'?lang='+event.target.innerHTML;
 		const page_titles = document.querySelectorAll('.page-title span');
 		page_titles.forEach(function(page_title) {
@@ -134,7 +159,6 @@ lang_selectors.forEach(function(lang) {
 
   });
 });
-
 
 
 // if lang parameter is set in url than trigger click on this
@@ -181,3 +205,93 @@ setInterval(function() {
 }, 1000);
   
 
+// load rss feed for blog.html
+function readRSS() {
+    fetch("blog/feed.rss")
+    .then(function(response) {
+      return response.text();
+    })
+    .then(function(data) {
+      var parser = new DOMParser();
+      var xmlDoc = parser.parseFromString(data, "text/xml");
+
+	  var bitem = window.location.hash.split('?')[0];
+	  
+	  var blang = window.location.href.split('?')[1];
+	  if (blang==undefined) blang=''; else blang='?'+blang;
+  
+	  var btype = window.location.pathname;
+
+	  console.log(btype);
+	  var barticle=false;
+
+	  document.getElementById("rss-feed").innerHTML='';
+      var items = xmlDoc.getElementsByTagName("item");
+      for (var i = 0; i < items.length; i++) {
+        var btitle = items[i].getElementsByTagName("title")[0].textContent;
+        var blink = 'blog.html#' + items[i].getElementsByTagName("link")[0].textContent.split('blog.html#')[1];
+        blink = blink.split('?')[0]+blang;
+
+		console.log(blink);
+
+		
+		var bdate = items[i].getElementsByTagName("dc:date")[0].textContent;
+		var bcreator = items[i].getElementsByTagName("dc:creator")[0].textContent;
+		var bcategory = items[i].getElementsByTagName("category")[0].textContent;
+
+        var bdescription = items[i].getElementsByTagName("description")[0].textContent;
+
+		if ((btype=='/blog.html')&&(!barticle)) {
+			if (bitem=='') {
+				if (bcategory=='News') barticle=true;
+			}
+			else {
+				if (blink.includes(bitem)) barticle = true; 
+			};
+			if (barticle) {
+				document.getElementById("blog-title").innerHTML=btitle;
+				document.getElementById("blog-datacreator").innerHTML=bdate + ' ' + bcreator;
+				document.getElementById("blog-description").innerHTML=bdescription;
+				document.getElementById("blog-content").innerHTML=items[i].getElementsByTagName("content:encoded")[0].textContent.replace('https://aksw.github.io/DINOBBIO.website/', '');
+
+			}
+		}
+
+
+        // Hier kannst du den Inhalt des RSS-Feeds in deine HTML-Seite einfügen
+        var feedItem = document.createElement("div");
+        if (btype=='/blog.html') {
+			feedItem.innerHTML = '<p>'+bdate+' '+bcreator+'<br/><a href="' + blink + '" target="_self" class="blog-link">' + btitle + '</a> ' + bdescription + '</p>';
+         	document.getElementById("rss-feed").appendChild(feedItem);
+		}
+		else {
+			if (bcategory=='News') {
+				feedItem.innerHTML = '<p>'+bdate+' '+bcreator+'<br/><a href="' + blink + '" target="_self" class="blog-news">' + btitle + '</a> ' + bdescription + '</p>';
+				document.getElementById("rss-feed").appendChild(feedItem);
+			}
+		}
+	  }
+
+	  const bloglinks = document.querySelectorAll('.blog-link');
+		bloglinks.forEach(function(bloglink) {
+
+  		bloglink.addEventListener('click', function(event) {
+			event.preventDefault();
+			var lang = window.location.hash.split('?')[1];
+			console.log(lang);
+			if (lang==undefined) lang=''; else lang='?'+lang;
+	
+
+			const newURL = event.target.getAttribute('href').split('?')[0]+lang;
+
+			
+			history.pushState(null, document.title, newURL);
+			console.log(newURL);
+			readRSS();
+		})
+      })
+	})
+    .catch(function(error) {
+      console.log("Fehler beim Laden des RSS-Feeds:", error);
+    });
+  }

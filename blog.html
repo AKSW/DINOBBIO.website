@@ -136,15 +136,22 @@
             </h2>
           </div>
           <!--content-->
+
+
           <div class="col-8 content-center">
             <div class="row">
               <div class="col-6">
-                <h3>BLOG 1</h3>
-                <p>
-                </p>
+                <h3 id="blog-title"></h3>
+                <h4 id="blog-datacreator"></h4>
+                <p id="blog-description"></p>
+                <div id="blog-content"></div>
               </div>
               <div class="col-6">
-                <h3>BLOG 2</h3>
+                <h3 class="en">blog entries</h3>
+                <h3 class="de">Blog Einträge</h3>
+                <h3 class="pt">entradas de blog</h3>
+
+                <div id="rss-feed"><input type="button" value="Load feed" onclick="readRSS()"</div>
                 <p>
                 </p>
               </div>
@@ -209,4 +216,5 @@
     </footer>
   </body>
   <script src="assets/js/dinobbio.js"></script>
+  <script>readRSS();</script> 
   </html>

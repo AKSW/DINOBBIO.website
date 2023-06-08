@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>DINOBBIO</title>
+    <link>https://aksw.github.io/DINOBBIO.website</link>
+    <description> Discovering Natural Inspired Products from Brazilian Biodiversity</description>
+
+
+    <item>
+      <title>Project Logo</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#2</link>
+      <dc:creator>Edgard Marx</dc:creator>
+      <dc:date>2022-12-29</dc:date>
+      <dc:language>en</dc:language>
+      <description>We proudly present the logo for the DINOBBIO project</description>
+      <content:encoded><![CDATA[
+      <p>The new project logo has been developed by R²A together with the DINOBBIO team in Leipzig.</p>
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/Logo-Dinobbio.png"/>
+      <p><i>At R²A we are keen to support you in realizing your software project. With our strong background in agile software development, full stack web development, mobile development, and data engineering we can support you across the whole software development cycle.</i></p>
+      <p><a href="https://r2a.link/en/">https://r2a.link</a>
+      ]]>
+      </content:encoded>
+      <category>DINOBBIO</category>
+    </item>
+
+    <item>
+      <title>Project Kick-Off</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#1</link>
+      <dc:creator>Alan Pilon</dc:creator>
+      <dc:date>2022-01-21</dc:date>
+      <dc:language>en</dc:language>
+      <description>Discovering New Natural Inspired Products from Brazilian Biodiversity</description>
+      <content:encoded><![CDATA[
+      <p>On  Friday, November 5, 2021, the partnership between Brazilian an German researchers began on the project to improve the database of natural products, the NuBBE DB (DINOBBIO Project). The day was marked by the meeting of different ideas, but with a common objective, to make NuBBEDB’s natural products bank more intelligible, dynamic and integrated.</p>
+      <p><i>The DINOBBIO project is a bilateral cooperation with financial contributions from the Fundação de Support for Research in the State of São Paulo (FAPESP) and Deutsche Forchungsdgemernschaft (DFG) and, aims to investigate the challenges imposed in the construction, management and consumption of Biochemical Knowledge Graph (BKG) using technologies from Semantic Web and Machine Learning.</i></p>
+      <p>With lectures and round tables, the project’s Kick-off was carried out through the Zoom platform and mediated by Edgard Marx (Project Manager at HTWK | Leipzig). He elegantly gave us the welcome and a summary of information about the agenda, website, social media of the project, meetings and some views on collaboration.</p>
+      <p>Once introduced, Prof. Thomas Riechert, responsible for the project coordination in Germany, asked for a voice and gave us an exciting talk about his research activities in Semantic Web and on building research through online databases, always contextualizing the project.</p>
+      <p>The semantic, structural and rational universe was then gradually transformed into nature and chemistry. The prof. Vanderlan Bolzani led this transition, with a presentation on the natural products and “the invisible beauty of biodiversity,” in her words. she demonstrated some chemostructural relationships between substances and organisms providing benefits to society ranging from medicines to perfumes. Chemodiversity is the scientific career road of Prof. Vanderlan and reflects our aspirations in the development of the project and solutions for society.</p>
+      <p>Dr. Marilia Valli then gave us a clear and inspiring vision of where it all started. THE NuBBE DB is part of Marília’s career. During her doctorate, she idealized the importance of a natural products bank in its research in Medicinal Chemistry, which in the end turned out to be making “the ends” of her research. The scope and importance of the database have generated new opportunities for researchers and for valuing Brazilian biodiversity.</p>
+      <p>Dr. Alan Pilon continued Marilia’s explanations, bringing a current view of the database, the publications generated in recent years and the tools applied and developed. There was still a discussion about the project’s Work Packages with hypotheses and possible solutions. Prof. Adriano Andricopulo, gave important insights into the discussion and highlighted relevant aspects of the collaboration.</p>
+      <p>The morning full of expectations and challenges ends in eloquence says Project Manager Edgard Marx, tying research into processing large Knowledge Graphs with machine learning and collaborative crowdsourcing tools, in the big project umbrella.</p>
+      <p>The second half was marked by constructive discussions. Precisely a round table, involving Edgard, Marília and Alan and other project participants such as Dr. Helena M. Russo and Dr. Meri Emili F. Pinto. With more time and less structure, ontologies and database architectures bringing ideas, visions and feedback to key challenges.</p>
+      <p>It was a day of brainstorming, alignment, networking and knowledge.</p>
+      ]]></content:encoded>
+      <category>News</category>
+      <category>DINOBBIO</category>
+      <category>Natural Products</category>
+      <category>Brazilian Biodiversity</category>
+
+    </item>
+
+
+ 
+  </channel>
+
+</rss>
+
