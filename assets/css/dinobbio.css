@@ -278,6 +278,10 @@ nav a { text-decoration: none; }
   color: #fbfbfb;
 }
 
+.title h1 div:nth-child(1) .de{
+  font-size: 0.9em;
+}
+
 .title h1 div:nth-child(3) {
   font-family: 'LucidaConsole', sans-serif;
   font-size: 3.3vw;
@@ -357,6 +361,10 @@ nav a { text-decoration: none; }
 }
 
 .page-title {
+  margin-left: 1.8rem;
+}
+
+.page-title~p {
   margin-left: 1.8rem;
 }
 
