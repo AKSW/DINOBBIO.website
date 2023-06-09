@@ -33,7 +33,10 @@
       <description>Our colleague Edgard Marx gave a presentation about our project at Index Nacional.</description>
       <content:encoded><![CDATA[
       <p><a href="https://index.org.mx/">https://index.org.mx/</a>
+      </p>
+      <p><iframe scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: static; visibility: visible; width: 550px; height: 710px; display: block; flex-grow: 1;" title="Twitter Tweet" src="assets/widgets/iframe_external.html#https://platform.twitter.com/embed/Tweet.html?dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1549988045684101120&amp;lang=en&amp;origin=https%3A%2F%2Fdinobbio.aksw.org%2Fprojects%2Findex.html&amp;sessionId=a5676077eeb37b86c5fd20cdabf59cf1c5e41338&amp;theme=light&amp;widgetsVersion=aaf4084522e3a%3A1674595607486&amp;width=550px"></iframe></p>  
       ]]>
+
       </content:encoded>
       <category>News</category>
       <category>DINOBBIO</category>
@@ -48,7 +51,10 @@
       <dc:language>en</dc:language>
       <description>Our colleague Edgard Marx gave a presentation about our project at the Leipzig Data Week.</description>
       <content:encoded><![CDATA[
-      <p><a href="https://www.youtube.com/embed/HJmDvqTKS8A?start=22328">https://www.youtube.com/embed/HJmDvqTKS8A?start=22328</a>
+      <p><a href="https://2022.dataweek.de/">https://2022.dataweek.de/</a>
+      </p>
+      <p><iframe title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" src="assets/widgets/iframe_external.html#https://www.youtube.com/embed/HJmDvqTKS8A?start=22328"></iframe></p>  
+
       ]]>
       </content:encoded>
       <category>News</category>

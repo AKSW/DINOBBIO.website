@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="../fonts/Roboto/font.css">
+    <style>
+        html {
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.5;
+            font-size: 16px;
+            color: #363636;
+            text-align: left;
+            margin: 0;
+            text-rendering: optimizeLegibility;
+            overflow-x:hidden;
+        }
+    </style>
+    <div>
+        <p class="en">Click here to view external content.</p>
+        <!--
+        <p class="de">Klicken Sie hier um den externen Inhalt anzuzeign.</p>
+        <p class="pt">Clique aqui para visualizar o conteúdo externo.</p>
+        -->
+        <p id="external-link"><a href="<link>" target="_self"><link></a></p>
+    </div>
+    <script>
+        var external_link = window.location.hash.substring(1);
+        var external_hostname = window.location.hostname;
+        var external_p = document.getElementById('external-link');
+
+        external_p.innerHTML=external_p.innerHTML.replace('<link>',external_link).replace('<link>',external_link.split('?')[0]);
+    </script>
+</html>

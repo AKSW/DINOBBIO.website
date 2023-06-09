@@ -1,3 +1,4 @@
+@import url("../fonts/Roboto/font.css");
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -393,6 +394,15 @@ nav a { text-decoration: none; }
 
 }
 .float-right {float: right!important}
+
+.content-center img {
+  max-width: 100%;
+}
+
+.content-center iframe {
+  max-width: 100%;
+  border: 1px solid #85b33d;
+}
 
 
  /* Partner */
