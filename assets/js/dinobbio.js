@@ -215,7 +215,7 @@ function readRSS() {
       var parser = new DOMParser();
       var xmlDoc = parser.parseFromString(data, "text/xml");
 
-	  var bitem = window.location.hash.split('?')[0];
+	  var bitem = window.location.hash.split('?')[0]+'?';
 	  
 	  var blang = window.location.href.split('?')[1];
 	  if (blang==undefined) blang=''; else blang='?'+blang;
@@ -223,6 +223,8 @@ function readRSS() {
 	  var btype = window.location.pathname;
 
 	  console.log(btype);
+	  console.log(bitem);
+	  console.log(blang);
 	  var barticle=false;
 
 	  document.getElementById("rss-feed").innerHTML='';
@@ -232,6 +234,7 @@ function readRSS() {
         var blink = 'blog.html#' + items[i].getElementsByTagName("link")[0].textContent.split('blog.html#')[1];
         blink = blink.split('?')[0]+blang;
 
+		console.log(btitle);
 		console.log(blink);
 
 		
@@ -241,12 +244,15 @@ function readRSS() {
 
         var bdescription = items[i].getElementsByTagName("description")[0].textContent;
 
+		console.log(bcategory);
+
+
 		if ((btype=='/blog.html')&&(!barticle)) {
-			if (bitem=='') {
+			if (bitem=='?') {
 				if (bcategory=='News') barticle=true;
 			}
 			else {
-				if (blink.includes(bitem)) barticle = true; 
+				if (blink+'?'.includes(bitem)) barticle = true; 
 			};
 			if (barticle) {
 				document.getElementById("blog-title").innerHTML=btitle;
