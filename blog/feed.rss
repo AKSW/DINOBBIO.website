@@ -25,6 +25,37 @@
     </item>
 
     <item>
+      <title>Project Talk</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#2</link>
+      <dc:creator>Edgard Marx</dc:creator>
+      <dc:date>2022-07-21</dc:date>
+      <dc:language>en</dc:language>
+      <description>Our colleague Edgard Marx gave a presentation about our project at Index Nacional.</description>
+      <content:encoded><![CDATA[
+      <p><a href="https://index.org.mx/">https://index.org.mx/</a>
+      ]]>
+      </content:encoded>
+      <category>News</category>
+      <category>DINOBBIO</category>
+    </item>
+    
+    
+    <item>
+      <title>Project Talk</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#2</link>
+      <dc:creator>Edgard Marx</dc:creator>
+      <dc:date>2022-07-07</dc:date>
+      <dc:language>en</dc:language>
+      <description>Our colleague Edgard Marx gave a presentation about our project at the Leipzig Data Week.</description>
+      <content:encoded><![CDATA[
+      <p><a href="https://www.youtube.com/embed/HJmDvqTKS8A?start=22328">https://www.youtube.com/embed/HJmDvqTKS8A?start=22328</a>
+      ]]>
+      </content:encoded>
+      <category>News</category>
+      <category>DINOBBIO</category>
+    </item>
+    
+    <item>
       <title>Project Kick-Off</title>
       <link>https://aksw.github.io/DINOBBIO.website/blog.html#1</link>
       <dc:creator>Alan Pilon</dc:creator>
