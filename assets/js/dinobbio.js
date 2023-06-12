@@ -209,6 +209,25 @@ setInterval(function() {
 }, 1000);
   
 
+// Sprache auslesen
+function getLangfromURL(url) {
+	var lang='en';
+	if (url.includes('?lang=de')) lang='de';
+	if (url.includes('?lang=pt')) lang='pt';
+	return lang;
+}
+function getHashfromURL(url) {
+	console.log(url);
+	var n=url;
+	n=n.replace('?lang=en','');
+	n=n.replace('?lang=de','')
+	n=n.replace('?lang=pt','');
+	var s=n.split('#');
+	if (s[1]==undefined) return '';
+	else return s[1];
+}
+
+
 // load rss feed for blog.html
 function readRSS() {
     fetch("blog/feed.rss")
@@ -219,46 +238,36 @@ function readRSS() {
       var parser = new DOMParser();
       var xmlDoc = parser.parseFromString(data, "text/xml");
 
-	  var bitem = window.location.hash.split('?')[0]+'?';
-	  
-	  var blang = window.location.href.split('?')[1];
-	  if (blang==undefined) blang=''; else blang='?'+blang;
+	  var bitem = getHashfromURL(window.location.href);
+	  var blang = getLangfromURL(window.location.href);
   
 	  var btype = window.location.pathname;
 
-	  console.log(btype);
-	  console.log(bitem);
-	  console.log(blang);
 	  var barticle=false;
 
 	  document.getElementById("rss-feed").innerHTML='';
       var items = xmlDoc.getElementsByTagName("item");
       for (var i = 0; i < items.length; i++) {
         var btitle = items[i].getElementsByTagName("title")[0].textContent;
-        var blink = 'blog.html#' + items[i].getElementsByTagName("link")[0].textContent.split('blog.html#')[1];
-        blink = blink.split('?')[0]+blang;
+		var bhash=getHashfromURL(items[i].getElementsByTagName("link")[0].textContent);
+		var blink = 'blog.html#' + bhash+'?lang='+blang;
 
-		console.log(btitle);
-		console.log(blink);
-
-		
 		var bdate = items[i].getElementsByTagName("dc:date")[0].textContent;
 		var bcreator = items[i].getElementsByTagName("dc:creator")[0].textContent;
 		var bcategory = items[i].getElementsByTagName("category")[0].textContent;
 
         var bdescription = items[i].getElementsByTagName("description")[0].textContent;
 
-		console.log(bcategory);
-
 
 		if ((btype=='/blog.html')&&(!barticle)) {
-			if (bitem=='?') {
+			if (bitem=='') {
 				if (bcategory=='News') barticle=true;
 			}
 			else {
-				if (blink+'?'.includes(bitem)) barticle = true; 
+				if (blink==bhash) barticle = true; 
 			};
 			if (barticle) {
+				console.log('data')
 				document.getElementById("blog-title").innerHTML=btitle;
 				document.getElementById("blog-datacreator").innerHTML=bdate + ' ' + bcreator;
 				document.getElementById("blog-description").innerHTML=bdescription;
