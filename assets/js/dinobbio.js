@@ -30,6 +30,10 @@ nav_links.forEach(function(nav_link) {
 		nav_link.innerHTML=set_languages('privacy','Daten&shy;schutz','proteção dos dados');
 	}
 
+	if (href=='imprint.html') {
+		nav_link.innerHTML=set_languages('imprint','Impressum','impressão');
+	}
+
 	//make this internal links loadable with js
 	nav_link.addEventListener('click', function(event) {
 
