@@ -6,6 +6,50 @@
     <link>https://aksw.github.io/DINOBBIO.website</link>
     <description> Discovering Natural Inspired Products from Brazilian Biodiversity</description>
 
+    <item>
+      <title>Project Workshop</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#7</link>
+      <dc:creator>Edgard Marx</dc:creator>
+      <dc:date>2023-05-28</dc:date>
+      <dc:language>en</dc:language>
+      <description>We organized and realized with great success the First International Biochemical Knowledge Extraction Challenge (BiKE) co-located with Text2KG @ ESWC 2023.</description>
+      <content:encoded><![CDATA[
+      <p>The challenge presentation took part during the morning of the first day of workshops from ESWC 2023 in Hersonissos, Greece.</p>
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_2648.png"/>
+      <p>All the information from the challenge can be accessed at <a href="https://aksw.org/bike/>aksw.org.bike</a>.</p>
+      <p>But, we would like to share more about that morning here. First we had some presentations:</p>
+      <p>
+        <ul>
+          <li>Natural Products and their role within the economy and science, by Edgard Marx;</li>
+          <li>NaTUKE, the baseline work used for the challenge by Paulo do Carmo;</li>
+          <li>The NuBBE Knowledge Graph, a new version of the natural product Knowledge Graph used in NaTUKE and the challenge by István Mócsy;</li>
+          <li>And the three successful solutions to improve NaTUKE by: by Stefan Schmidt-Dichte and István J. Mócsy; Bhushan Zope, Sashikala Mishra and Sanju Tiwari; Matthias Jooß, Jonas Gwozdz and Pit Fröhlich.</li>
+        </ul>
+      </p>
+      <p>Afterwards we had the awards session, where the following places were awarded:</p>
+      <p>
+        <ol>
+          <li>
+            Matthias Jooß, Jonas Gwozdz and Pit Fröhlich
+            <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_2668.png"/>
+          </li>
+          <li>
+            Stefan Schmidt-Dichte and István J. Mócsy
+            <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_2661.png"/>
+          </li>
+          <li>
+            Bhushan Zope, Sashikala Mishra and Sanju Tiwari
+            <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_2671.png"/>
+          </li>
+        </ol>
+      </p>
+      ]]></content:encoded>
+      <category>News</category>
+      <category>Automatic Extraction</category>
+      <category>Knowledge Graphs</category>
+      <category>Natural Products</category>
+      <category>DINOBBIO</category>
+    </item>
 
     <item>
       <title>Project Talk</title>
