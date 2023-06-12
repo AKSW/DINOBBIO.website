@@ -8,8 +8,22 @@
 
 
     <item>
+      <title>Project Talk</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#6</link>
+      <dc:creator>Paulo do Carmo</dc:creator>
+      <dc:date>2023-02-03</dc:date>
+      <dc:language>en</dc:language>
+      <description>Our colleague Paulo do Carmo gave a presentation about the published paper "NatUKE: A Benchmark for Natural Product Knowledge Extraction from Academic Literature" at the 2023 IEEE 17th International Conference on Semantic Computing (ICSC).</description>
+      <content:encoded><![CDATA[
+      <p>The paper was presented in the ICSC 2023 in the Resource Track on the Friday February 3rd.</p>
+      ]]></content:encoded>
+      <category>News</category>
+      <category>DINOBBIO</category>
+    </item>
+
+    <item>
       <title>Project Logo</title>
-      <link>https://aksw.github.io/DINOBBIO.website/blog.html#4</link>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#5</link>
       <dc:creator>Edgard Marx</dc:creator>
       <dc:date>2022-12-29</dc:date>
       <dc:language>en</dc:language>
@@ -26,7 +40,7 @@
 
     <item>
       <title>Project Talk</title>
-      <link>https://aksw.github.io/DINOBBIO.website/blog.html#3</link>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#4</link>
       <dc:creator>Edgard Marx</dc:creator>
       <dc:date>2022-07-21</dc:date>
       <dc:language>en</dc:language>
@@ -45,7 +59,7 @@
     
     <item>
       <title>Project Talk</title>
-      <link>https://aksw.github.io/DINOBBIO.website/blog.html#2</link>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#3</link>
       <dc:creator>Edgard Marx</dc:creator>
       <dc:date>2022-07-07</dc:date>
       <dc:language>en</dc:language>
@@ -55,6 +69,21 @@
       </p>
       <p><iframe title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" src="assets/widgets/iframe_external.html#https://www.youtube.com/embed/HJmDvqTKS8A?start=22328"></iframe></p>  
 
+      ]]>
+      </content:encoded>
+      <category>News</category>
+      <category>DINOBBIO</category>
+    </item>
+
+    <item>
+      <title>Project News</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#2</link>
+      <dc:creator>Paulo do Carmo</dc:creator>
+      <dc:date>2022-04-01</dc:date>
+      <dc:language>en</dc:language>
+      <description>We received Paulo do Carmo, a Master Student from the University of São Paulo (USP), as a Guest Researcher in the DINOBBIO project.</description>
+      <content:encoded><![CDATA[
+      <p>Paulo do Carmo's period as a Guest Researcher will take place from April 1st until June 30th with the aim to develop an automatic extraction method for Natural Products in Academic Literature.</p>
       ]]>
       </content:encoded>
       <category>News</category>
