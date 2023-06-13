@@ -29,11 +29,7 @@ content .page {padding-top: 10rem;}
 footer {bottom: 0;  }
 .page {display: block; max-width: 120em; margin: 0 auto;}
 
-.logo>a {
-  text-decoration: none;
-}
-.logo>a:visited {
-  color: black;
+.logo>a, .logo>a:visited {
   text-decoration: none;
 }
 
