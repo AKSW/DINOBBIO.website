@@ -1,6 +1,27 @@
 // add language selectors
 document.getElementById('language').innerHTML='<div class="navbar-lang"><div class="nav-item">pt</div><div class="nav-item">de</div><div class="nav-item">en</div></div>';
 
+// Sprache auslesen
+function getLangfromURL(url) {
+	var lang='en';
+	if (url.includes('?lang=de')) lang='de';
+	if (url.includes('?lang=pt')) lang='pt';
+	return lang;
+}
+// Hash-Value auslesen
+function getHashfromURL(url) {
+	console.log(url);
+	var n=url;
+	n=n.replace('?lang=en','');
+	n=n.replace('?lang=de','')
+	n=n.replace('?lang=pt','');
+	var s=n.split('#');
+	if (s[1]==undefined) return '';
+	else return s[1];
+}
+
+
+
 // load different languages for menu items
 const nav_links = document.querySelectorAll('.nav-item .nav-link');
 nav_links.forEach(function(nav_link) {
@@ -73,7 +94,6 @@ nav_links.forEach(function(nav_link) {
 			// Add the new URL to the browser's history
 			history.pushState(null, pageTitle, newURL);
 
-			console.log(newURL);
 			
 			if (newURL.split('.html')[0]=='blog') {
 				readRSS();				
@@ -123,14 +143,12 @@ lang_selectors.forEach(function(lang) {
 		// switch language
 		const lang_script = document.querySelector('style');
 		lang_script.innerHTML='.'+event.target.innerHTML+' {display:block}';
-		console.log(event.target.innerHTML);
 
 		// add language link to nav-links
 		const nav_links = document.querySelectorAll('.nav-item .nav-link');
 		nav_links.forEach(function(nav_link) {
 			const href= nav_link.getAttribute('href').split('?');
 			nav_link.setAttribute('href',href[0]+'?lang='+event.target.innerHTML)
-
 		});
 		// add language link to blog-links
 		const blog_links = document.querySelectorAll('.blog-link');
@@ -150,14 +168,13 @@ lang_selectors.forEach(function(lang) {
 		const newURL = window.location.href.split('?')[0]+'?lang='+event.target.innerHTML;
 		const page_titles = document.querySelectorAll('.page-title span');
 		page_titles.forEach(function(page_title) {
-			console.log(window.getComputedStyle(page_title).display);
 			
-	    if (window.getComputedStyle(page_title).display === 'block') {
-	    		pageTitle = 'DINOBBIO - '+page_title.innerHTML 
-					document.querySelector('title').innerHTML=pageTitle;
-					// Add the new URL to the browser's history
-					history.pushState(null, pageTitle, newURL);
-			}
+			if (window.getComputedStyle(page_title).display === 'block') {
+					pageTitle = 'DINOBBIO - '+page_title.innerHTML 
+						document.querySelector('title').innerHTML=pageTitle;
+						// Add the new URL to the browser's history
+						history.pushState(null, pageTitle, newURL);
+				}
 		});
 		
 
@@ -166,28 +183,14 @@ lang_selectors.forEach(function(lang) {
 
 
 // if lang parameter is set in url than trigger click on this
-if (window.location.href.split('?')[1]=='lang=de') {
-	const clickEvent = new Event('click');
-	const lang_selectors = document.querySelectorAll('#language .nav-item');
-	lang_selectors.forEach(function(lang) {if (lang.innerHTML=='de') {lang.dispatchEvent(clickEvent)}});
-}
-else if (window.location.href.split('?')[1]=='lang=pt') {
-	const clickEvent = new Event('click');
-	const lang_selectors = document.querySelectorAll('#language .nav-item');
-	lang_selectors.forEach(function(lang) {if (lang.innerHTML=='pt') {lang.dispatchEvent(clickEvent);}});
-}
-else {
-	const clickEvent = new Event('click');
-	const lang_selectors = document.querySelectorAll('#language .nav-item');
-	lang_selectors.forEach(function(lang) {if (lang.innerHTML=='en') {lang.dispatchEvent(clickEvent);}});
-}
-
+const lang_parameter=getLangfromURL(window.location.href);
+const clickEvent = new Event('click');
+const lang_selectors1 = document.querySelectorAll('#language .nav-item');
+lang_selectors1.forEach(function(lang) {if (lang.innerHTML==lang_parameter) {lang.dispatchEvent(clickEvent)}});
 
 // slider background images
 
 setTimeout(function() {
-	
-
 	setInterval(function() {
 	
 		var nr = document.querySelector('.title').getAttribute('slide-nr');
@@ -197,8 +200,6 @@ setTimeout(function() {
 		document.querySelector('.title').setAttribute('class','col-8 col-12-md title nr'+nr);
 		document.querySelector('.title').removeAttribute('style');
 	}, 5000);
-  
-
   }, 10000);
   
 // fit page padding
@@ -208,24 +209,6 @@ setInterval(function() {
 	document.querySelector('content .page').setAttribute('style','padding: '+Math.trunc(rect_header.bottom+10)+'px 0px '+Math.trunc(rect_footer.height)+'px 0px');
 }, 1000);
   
-
-// Sprache auslesen
-function getLangfromURL(url) {
-	var lang='en';
-	if (url.includes('?lang=de')) lang='de';
-	if (url.includes('?lang=pt')) lang='pt';
-	return lang;
-}
-function getHashfromURL(url) {
-	console.log(url);
-	var n=url;
-	n=n.replace('?lang=en','');
-	n=n.replace('?lang=de','')
-	n=n.replace('?lang=pt','');
-	var s=n.split('#');
-	if (s[1]==undefined) return '';
-	else return s[1];
-}
 
 
 // load rss feed for blog.html
@@ -241,8 +224,6 @@ function readRSS() {
 	  var bitem = getHashfromURL(window.location.href);
 	  var blang = getLangfromURL(window.location.href);
   
-	  var btype = window.location.pathname;
-
 	  var barticle=false;
 
 	  document.getElementById("rss-feed").innerHTML='';
@@ -258,13 +239,12 @@ function readRSS() {
 
         var bdescription = items[i].getElementsByTagName("description")[0].textContent;
 
-
-		if ((btype=='/blog.html')&&(!barticle)) {
+		if ((window.location.pathname.includes('/blog.html'))&&(!barticle)) {
 			if (bitem=='') {
 				if (bcategory=='News') barticle=true;
 			}
 			else {
-				if (blink==bhash) barticle = true; 
+				if (bitem==bhash) barticle = true; 
 			};
 			if (barticle) {
 				console.log('data')
@@ -279,7 +259,7 @@ function readRSS() {
 
         // Hier kannst du den Inhalt des RSS-Feeds in deine HTML-Seite einfügen
         var feedItem = document.createElement("div");
-        if (btype=='/blog.html') {
+        if (window.location.pathname.includes('/blog.html')) {
 			feedItem.innerHTML = '<p>'+bdate+' '+bcreator+'<br/><a href="' + blink + '" target="_self" class="blog-link">' + btitle + '</a> ' + bdescription + '</p>';
          	document.getElementById("rss-feed").appendChild(feedItem);
 		}
