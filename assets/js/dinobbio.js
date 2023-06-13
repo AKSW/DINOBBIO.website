@@ -39,7 +39,7 @@ nav_links.forEach(function(nav_link) {
 		nav_link.innerHTML=set_languages('talks','Vorträge','apresent&shy;ações');
 	}
 	if (href=='partners.html') {
-		nav_link.innerHTML=set_languages('partners','Partner','parceiro');
+		nav_link.innerHTML=set_languages('partners','Partner','parceiros');
 	}
 	if (href=='blog.html') {
 		nav_link.innerHTML=set_languages('blog','Blog','blog');
