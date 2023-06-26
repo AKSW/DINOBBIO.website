@@ -27,7 +27,7 @@
       </p>
       <img src="https://aksw.github.io/DINOBBIO.website/blog/images/Wegweiser-zur-dataweek-2023.jpg"/>
       <p>Venue: New City Hall, Martin-Luther-Ring 4-6, 04109 Leipzig, Germany</p>
-      <p>For more information and to watch the live stream of Data Week Leipzig, please visit: https://2023.dataweek.de/</p>
+      <p>For more information and to watch the live stream of Data Week Leipzig, please visit: <a href="https://2023.dataweek.de/" target="_blank">https://2023.dataweek.de/</a></p>
       ]]></content:encoded>
       <category>News</category>
       <category>Automatic Extraction</category>
