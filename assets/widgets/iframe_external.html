@@ -22,11 +22,5 @@
         -->
         <p id="external-link"><a href="<link>" target="_self"><link></a></p>
     </div>
-    <script>
-        var external_link = window.location.hash.substring(1);
-        var external_hostname = window.location.hostname;
-        var external_p = document.getElementById('external-link');
-
-        external_p.innerHTML=external_p.innerHTML.replace('<link>',external_link).replace('<link>',external_link.split('?')[0]);
-    </script>
+    <script type="text/javascript" src="iframe_external.js"></script>
 </html>
