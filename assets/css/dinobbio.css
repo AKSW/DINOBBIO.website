@@ -107,7 +107,10 @@ p > a {
     float: none;
   }
 
-.logo, .logo-text {
+.logo {
+    margin-bottom: 2em;
+}
+.logo-text {
     margin-bottom: 0.2em;
 }
 
