@@ -8,6 +8,34 @@
 
     <item>
       <title>Data Week Leipzig 2023 and Leipzig Semantic Web Day</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#Y6p1</link>
+      <dc:creator>Paulo do Carmo</dc:creator>
+      <dc:date>2023-06-28</dc:date>
+      <dc:language>en</dc:language>
+      <description>We marked our presence on Data Week Leipzig 2023 and Leipzig Semantic Web Day.
+      </description>
+      <content:encoded><![CDATA[
+      <p>We kicked off the day by participating on some really interesting talks from other research colleagues
+      in the Leipzig Semantic Web Day as three integrants from DINOBBIO (Paulo do Carmo, Thomas Riechert, and Edgard Marx).</p>
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/Wegweiser-zur-dataweek-2023.jpg"/>
+      <p>We also participated (and voted) for the posters from the Computer Science and Media Informatics students in the 
+      Minutes by Future Knowledge Experts and poster sessions.</p>
+      <p>In the afternoon our colleague Paulo do Carmo presented 
+      "DINOBBIO: Automatic Extracting Biochemical Knowledge From Academic Literature" at the 
+      Semantic Technologies and Artificial Intelligence session.</p>
+      <p><iframe width="560" height="315" src="assets/widgets/iframe_external.html#https://www.youtube.com/embed/n8Kb2P8ilwg?start=25625" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe></p>  
+      <p>And to close the day we visited the city town hall tower and socialized at the eccenca Semantic Beergarden.</p>
+      ]]></content:encoded>
+      <category>News</category>
+      <category>Automatic Extraction</category>
+      <category>Knowledge Graphs</category>
+      <category>Natural Products</category>
+      <category>Event</category>
+      <category>DINOBBIO</category>
+    </item>
+
+    <item>
+      <title>Data Week Leipzig 2023 and Leipzig Semantic Web Day</title>
       <link>https://aksw.github.io/DINOBBIO.website/blog.html#Y6D0</link>
       <dc:creator>Thomas Riechert</dc:creator>
       <dc:date>2023-06-26</dc:date>
