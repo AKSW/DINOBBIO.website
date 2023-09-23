@@ -1,5 +1,10 @@
 @import url("../fonts/Roboto/font.css");
 
+
+pre.bibtex {
+    text-wrap: wrap;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
