@@ -15,28 +15,28 @@
       <description>AKSW Group visits Semantics Leipzig 2023</description>
       <content:encoded><![CDATA[
      
-      <p> SEMANTiCS conference took place for the 19th time this year from 20th-22nd of september in Leipzig. Located at HYPERION Hotel, one of the biggest venues on semantic technologies in Europe, it brought together a wide range of international experts,
+      <p> The <b> SEMANTiCS conference </b> took place for the 19th time this year from 20th-22nd of september in Leipzig. Located at HYPERION Hotel, one of the biggest venues on semantic technologies in Europe, it brought together a wide range of international experts,
       among them data scientists, researchers and industry leaders. 
 
       <p> It was a three-day event where we had the chance to meet again with our colleagues and discuss challenges and future projects. HTWK is been an active supporter of DBpedia and has also helped the conference organization.
       Some of our session highlights were: </p>
 
-      <p> - 3rd Workshop on Ontologies for FAIR and FAIR Ontologies(Onto4FAIR) </p>
+      <p> <b> 3rd Workshop on Ontologies for FAIR and FAIR Ontologies(Onto4FAIR) </b> </p>
       <p> "Findable, Accessible, Interoperable and Reusable" (FAIR) are the principles that are already helping make big amounts of data reusable and accessible for a wide range of areas today.
           The special focus of this workshop lay in presenting these four aspects as key element to making data more easily accessible for machines. With little to no human intervention,
           data that is FAIR can automatically be processed.
            </p>
 
-      <p> - 2nd NLP4KGC: Natural Language Processing for Knowledge Graph Construction </p>
+      <p><b> 2nd NLP4KGC: Natural Language Processing for Knowledge Graph Construction</b> </p>
       <p> The goal of this workshop was to highlight different approaches of extracting data and knowledge from text, as well as presenting theoretical and practical aspects
           of using semantics and natural language processing for knowledge graph creation.</p>
       <p> And, of course, we could not miss the DBpedia community session. </p>
-      <p> Below is a picture with our students Stefan Dichte-Schmidt, Istavan Mocsy, Paulo Viviurka do Carmo and our project manager Edgard Marx. </p>
+      <p> Below is a picture with our students Stefan Dichte-Schmidt, István Mócsy, Paulo Viviurka do Carmo and our project manager Edgard Marx. </p>
       
       <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_3205.jpg"/>
       
       <p><a href="https://2023-eu.semantics.cc/">Find more information about SEMANTiCS 2023 here</a>
-      <p><a href="https://2023-eu.semantics.cc/page/dbpedia">and the CDpedia day here</a>
+      <p><a href="https://2023-eu.semantics.cc/page/dbpedia">and the DBpedia day here</a>
       ]]>
       </content:encoded>
       <category>News</category>
