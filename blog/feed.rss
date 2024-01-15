@@ -7,15 +7,31 @@
     <description> Discovering Natural Inspired Products from Brazilian Biodiversity</description>
 
     <item>
-      <title>Thesis and Dissertation Award at WebMedia2023</title>
-      <link>https://aksw.github.io/DINOBBIO.website/blog.html#Z6fje</link>
+      <title>Paulo do Carmo and Edgard Marx meet project partners in Sao Paulo to discuss further collaoboration</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#T6fje</link>
       <dc:creator>Dominique Fischer</dc:creator>
-      <dc:date>2023-12-04</dc:date>
+      <dc:date>2024-01-15</dc:date>
       <dc:language>en</dc:language>
       <description>Paulo do Carmo Takes Home Third Prize</description>
       <content:encoded><![CDATA[
       <p> During their visit to Brazil, Edgard Marx and Paulo do Carmo took part in a meeting with our project partners Vanderlan Bolzani from the University of the State of Sao Paulo, Adriano Adricopulo from the University of Sao Paulo. </p>
-      
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG-20231206-WA0015.jpg">
+      <p> The conference was aimed at intensifying the DFG/FAPESP DINOBBIO project collaboration between the Institute for Applied Informatics (INFAI/AKSW), the University of São Paulo (USP), and the São Paulo State University (UNESP) by accelerating the research on discovering natural products empowered by Semantic Web Technologies and Machine Learning using Brazilian biodiversity. One of the aims of intensifying the group's collaboration is to elaborate a joint research proposal for the DFG(Deutsche Forschungsgesellschaft) Research Unit call to be submitted at the end of the DINOBBIO project. </p>
+      <p> The participants achieved to settle upon the following prompts to finalize for the DFG Research Unit proposal: </p>
+      <li> Intensifying joint research collaboration between the involved project parties </li>
+      <li> Developing joint software artifacts </li>
+      <li> to increase DINOBBIOs dataset information and quality </li>
+      <li> to design better machine learning predictive models </li>
+      <li> last but not least planing & writing joint research grant applications </li>
+
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_20240103_105348.jpg">
+
+      <p> The preliminary work by DINOBBIO, that is already being sponsored by DFG/FAPESP can be inspected looking at our „Publications“ and „About“ section or reading further blog entries. 
+        <br>UNESP/USP meanwhile are focused on maintaining the dataset up to date but also to contribute rich feedback regarding the development of research methods as well as guaranteeing high-quality data beeing produced for the predictive methods. They will use their expertise to guide data modeling as well as help the team in tests and benchmark design. 
+        <br>In addition, INFAI/AKSW will focus on exploring the data to develop better machine-learning predictive models for large-scale natural product discovery. In this project's scope, INFAI/AKSW will also focus on exploring the data to develop better machine learning predictive models for large-scale natural product discovery. 
+        <br>Furthermore, the HTWK will focus on knowledge engineering the dataset. </p>
+
+        <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_20240103_105348.jpg">
       ]]></content:encoded>
       <category>News</category>
       <category>Knowledge Graphs</category>
@@ -27,10 +43,10 @@
     </item>
 
     <item>
-      <title>Paulo do Carmo and Edgard Marx meet project partners in Sao Paulo to discuss further collaoboration </title>
-      <link>https://aksw.github.io/DINOBBIO.website/blog.html#T6fje</link>
+      <title>Thesis and Dissertation Award at WebMedia2023</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#Z6fje</link>
       <dc:creator>Dominique Fischer</dc:creator>
-      <dc:date>2024-01-15</dc:date>
+      <dc:date>2023-12-04</dc:date>
       <dc:language>en</dc:language>
       <description></description>
       <content:encoded><![CDATA[
