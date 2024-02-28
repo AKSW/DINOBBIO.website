@@ -7,6 +7,38 @@
     <description> Discovering Natural Inspired Products from Brazilian Biodiversity</description>
 
     <item>
+      <title>Paulo do Carmo presents PhD-Thesis project </title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#Ua3ah</link>
+      <dc:creator>Thomas Riechert</dc:creator>
+      <dc:date>2024-02-14</dc:date>
+      <dc:language>en</dc:language>
+      <description>to the Fakultätsrat of the Faculty of Computer Science and Media at HTWK Leipzig </description>
+      <content:encoded><![CDATA[
+      <p> As part of the PhD process Paulo do Carmo was presenting his PhD projekt <i>Knowledge Graph Aware Open Domain Recommender Systems</i> to the faculty of Computer Science and Media at HTWK Leipzig. </p>
+      <p><b>Motivation</b>
+      <ul><li>Knowledge Graphs (KGs) allow unstructured data to be published in a structured manner in the for of triples subject → predicate → object</li>
+          <li>Recommender Systems (RSs) are designed to output relevant information to a user (or group) based on an interaction, search or even another object form the same type
+          <ul><li>they are commonly used in web searches, streaming services or e-commerce platforms</li></ul></li>
+          <li>Combining KGs and RSs has been an attractive theme for many researchers as either: support for complementary data; structure to
+              explicitly model relations between user types and item types</li>
+      </ul>
+      </p>
+      <p><b>Problem statement</b><br/>
+      The aim of this PhD is to develop an automatic pipeline to generate and train RSs from any domains whenever a KG is available:
+      <ul><li><b>RQ1.</b> Do the semantics encoded in a KG triple allow RS relationships to be
+          learned automatically during training and testing?</li>
+          <li><b>RQ2.</b> Is an automatic RS pipeline capable of performing similarly to
+          state-of-the-art RSs using the same KG as data input?</li>
+          <li><b>RQ3.</b> What are the minimum requirements (number of classes and properties)
+          from the KG structure to be suitable for learning/inferring recommendations?</li>
+      </ul>
+      </p>
+      ]]></content:encoded>
+      <category>News</category>
+      <category>Knowledge Graphs</category>
+    </item>
+
+    <item>
       <title>Edgard Marx about to defend his dissertation</title>
       <link>https://aksw.github.io/DINOBBIO.website/blog.html#T6fya</link>
       <dc:creator>Dominique Fischer</dc:creator>
@@ -47,7 +79,7 @@
 
     <item>
       <title>Paulo do Carmo and Edgard Marx meet project partners in Sao Paulo</title>
-      <link>https://aksw.github.io/DINOBBIO.website/blog.html#T6fje</link>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#aiR7a</link>
       <dc:creator>Dominique Fischer</dc:creator>
       <dc:date>2024-01-15</dc:date>
       <dc:language>en</dc:language>
@@ -82,7 +114,7 @@
 
     <item>
       <title>Thesis and Dissertation Award at WebMedia2023</title>
-      <link>https://aksw.github.io/DINOBBIO.website/blog.html#Z6fje</link>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#ZiNg4</link>
       <dc:creator>Dominique Fischer</dc:creator>
       <dc:date>2023-12-04</dc:date>
       <dc:language>en</dc:language>
