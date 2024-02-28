@@ -7,6 +7,45 @@
     <description> Discovering Natural Inspired Products from Brazilian Biodiversity</description>
 
     <item>
+      <title>Edgard Marx about to defend his dissertation</title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#T6fya</link>
+      <dc:creator>Dominique Fischer</dc:creator>
+      <dc:date>2024-02-28</dc:date>
+      <dc:language>en</dc:language>
+      <description>Invitation to participate</description>
+      <content:encoded><![CDATA[
+
+      <p> for the public defense of the doctoral thesis of M. Sc. Edgard Luiz Marx for the degree of Dr. rer. nat. in the field of Computer science. </p>
+
+      <p>
+      The dissertations title is "Leveraging Information Retrieval over Linked Data"
+      and the defense will take place Thursday, February 29, 2024, at 10.00 a.m. CET in room p 801 (Augusteum, Augustusplatz 10, 04109 Leipzig). </p>
+
+      <p> The thesis tackles various significant challenges in accessing information from the Semantic Web and Linked Open Data (LOD) and offers novel solutions across multiple fronts:
+      Firstly, RDFSlice is introduced to efficiently select relevant fragments of RDF data, significantly improving speed and resource utilization compared to conventional methods.
+      Secondly, a decentralized publishing architecture is proposed, simplifying data sharing and querying processes while enhancing reliability and efficiency, albeit with some data replication across network peers.
+      Furthermore, the thesis identifies the need for ranking functions tailored to RDF data, introducing a benchmark for their evaluation and proposing two new ranking functions, DBtrends and MIXED-RANK.
+      Additionally, it addresses the challenge of converting natural language queries into formats understandable by KGs by introducing *P (star path), a scoring function based on Term Networks. This method outperforms traditional approaches in factual query interpretation.
+      Lastly, the thesis explores the enhancement of user interfaces for better information access, proposing semantic search extensions with visual elements to improve user experience.
+      In conclusion, these solutions collectively advance the field by addressing critical issues in data selection, publication, query conversion, and user interface design, thereby facilitating more efficient and effective access to information on the Semantic Web and LOD. </p>
+
+      <p>
+      The invitation can be shared with interested colleagues.
+      Professor Dr. Norbert Siegmund
+      Chairman of the Defense Committee </p>
+
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/csm_2015_Campus-AP-Augusteum-Paulinum_2461e_UL_822871c073.jpg">
+
+      ]]></content:encoded>
+      <category>News</category>
+      <category>Knowledge Graphs</category>
+      <category>Natural Products</category>
+      <category>DINOBBIO</category>
+      <category>Automatic Extraction</category>
+
+    </item>
+
+    <item>
       <title>Paulo do Carmo and Edgard Marx meet project partners in Sao Paulo</title>
       <link>https://aksw.github.io/DINOBBIO.website/blog.html#T6fje</link>
       <dc:creator>Dominique Fischer</dc:creator>
