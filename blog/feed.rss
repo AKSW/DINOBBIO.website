@@ -7,41 +7,35 @@
     <description> Discovering Natural Inspired Products from Brazilian Biodiversity</description>
 
     <item>
-      <title>Edgard Marx about to defend his dissertation</title>
+      <title>Edgard Marx awarded PhD magna cum laude</title>
       <link>https://aksw.github.io/DINOBBIO.website/blog.html#T6fya</link>
       <dc:creator>Dominique Fischer</dc:creator>
-      <dc:date>2024-02-28</dc:date>
+      <dc:date>2024-03-07</dc:date>
       <dc:language>en</dc:language>
-      <description>Warm Invitation to attend</description>
+      <description>Defense and Celebration</description>
       <content:encoded><![CDATA[
 
-      <p>On the occasion of the public defense of the doctoral thesis of M. Sc. Edgard Luiz Marx for the degree of Dr. rer. nat. in the field of Computer science, an invitation is extended to colleagues and others interested. </p>
+      <p>Last Thursday, Febuary 29th, colleagues, fellow scientists and friends gathered in room 801 of the Augusteum at Augustusplatz in Leipzig to listen to Edgar Marx’ PhD defense and show their support. Among them were Prof. Andreas Both, Prof. Jean-Alexander Müller and Prof. Thomas Riechert from HTWK Leipzig, Prof. Martin Potthast and Prof. Christoph Lindemann from Universität Leipzig.</p>
 
-      <p> 
-      Edgard Marxs' dissertations title is "Leveraging Information Retrieval over Linked Data". </p>
+      <figure>
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_20240229_104018.jpg" alt="Edgard Marx defending his PhD thesis. He is standing infront of a chalkboard that shows a projection of his presentation" style="width:50%">
+      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+      </figure>
 
-      <p> <b> A short summary of the thesis abstract:</b> </p>
-      <p> The thesis tackles various significant challenges in accessing information from the Semantic Web and Linked Open Data (LOD) and offers novel solutions across multiple fronts:</p>
+      <p>Edgards presentation of his dissertation <b>“Leveraging Information Retrieval over Linked Data”</b> was divided into two parts: </p>
 
-      Firstly, RDFSlice is introduced to efficiently select relevant fragments of RDF data, significantly improving speed and resource utilization compared to conventional methods.
-      
-      <p>
-      Secondly, a decentralized publishing architecture is proposed, simplifying data sharing and querying processes while enhancing reliability and efficiency, albeit with some data replication across network peers.
-      Furthermore, the thesis identifies the need for ranking functions tailored to RDF data, introducing a benchmark for their evaluation and proposing two new ranking functions, DBtrends and MIXED-RANK. </p>
+      <p> Part one focused on <u>Storage and Querying, discussing research questions:</u></p>
+      <li> How to slice relevant Linked Data sets? </li>
+      <li> How to facilitate publishing and consumption? </li>
 
-      <p>
-      Additionally, it addresses the challenge of converting natural language queries into formats understandable by KGs by introducing *P (star path), a scoring function based on Term Networks. This method outperforms traditional approaches in factual query interpretation.
-      </p>
+      <p> Part two then explored <u> Search, Browsing and Exploration</u>, adding research questions: 
+      <li> How to improve information access through natural language queries?</li>
+      <li> How to rand classes, entities and properties? </li>
 
-      <p>
-      Lastly, the thesis explores the enhancement of user interfaces for better information access, proposing semantic search extensions with visual elements to improve user experience.
-      In conclusion, these solutions collectively advance the field by addressing critical issues in data selection, publication, query conversion, and user interface design, thereby facilitating more efficient and effective access to information on the Semantic Web and LOD. </p>
+      <p> After a few minutes of discussion and questions seeking to further deepen the audiences understanding of the topic, the board withdrew from the presentation room. Shortly after, they then returned and happily awarded Mr. Marx with a PhD magna cum laude.  </p>
+      <p> Following a short round of congratulations, most of the audience then gathered and moved on to a celebrate with a BBQ organized by Dr. Sebastian Tramp on the rooftop terrace of Eccena GmbH, where Edgard works as Principal Data Scientist. </p>
 
-
-      <p><b>Location:</b></p>
-      <p> The defense will take place Thursday, February 29, 2024, at 10.00 a.m. CET in room p 801 (Augusteum, Augustusplatz 10, 04109 Leipzig). </p>
-
-      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/csm_2015_Campus-AP-Augusteum-Paulinum_2461e_UL_822871c073.jpg">
+      <p> <b>Parabéns and congratulations, Dr. Edgard Luíz Marx on completing this milestone of your academic career so successfully!</b>  </p>
 
       ]]></content:encoded>
       <category>News</category>
