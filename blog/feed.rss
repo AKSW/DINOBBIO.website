@@ -24,49 +24,38 @@
 
       <p>Edgards presentation of his dissertation <b>“Leveraging Information Retrieval over Linked Data”</b> was divided into two parts: </p>
 
-      <p> Part one focused on <u>Storage and Querying, discussing research questions:</u></p>
+      <p> <u>Part one focused on Storage and Querying, discussing research questions:</u></p>
       <li> How to slice relevant Linked Data sets? </li>
       <li> How to facilitate publishing and consumption? </li>
 
-      <p> Part two then explored <u> Search, Browsing and Exploration</u>, adding research questions: 
+      <p> <u>Part two then explored Search, Browsing and Exploration</u>, adding research questions: 
       <li> How to improve information access through natural language queries?</li>
       <li> How to rand classes, entities and properties? </li>
 
-      <figure>
-      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_20240229_112232.jpg" alt="Edgard Marx defending his PhD thesis. He is standing infront of a chalkboard that shows a projection of his presentation" style="width:700%; align-self:center;">
-      <figcaption>Edgard Marx giving his presentation</figcaption>
-      </figure>
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_20240229_112232.jpg" style="width:100%; max-width:230px; display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:5%;
+            margin-bottom:5%;
+            width: 50%; ">
 
       <p> After a few minutes of discussion and questions seeking to further deepen the audiences understanding of the topic, the board withdrew from the presentation room. Shortly after, they then returned and happily awarded Mr. Marx with a PhD magna cum laude.  </p>
       <p> Following a short round of congratulations, most of the audience then gathered and moved on to a celebrate with a BBQ organized by Dr. Sebastian Tramp on the rooftop terrace of Eccena GmbH, where Edgard works as Principal Data Scientist. </p>
 
-      <div style="display: inline-flex; flex-direction: row;">
-      <figure>
-      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_3952.jpg" alt="Edgard Marx defending his PhD thesis. He is standing infront of a chalkboard that shows a projection of his presentation" style="width:100%;">
-      <figcaption>Edgard Marx giving his presentation</figcaption>
-      </figure>
+      <div style="display: inline-flex; flex-direction: row; flex-wrap: wrap;">
+        <figure>
+        <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_3952.jpg" style="width:100%; min-width:230px;">
+        </figure>
 
-      <figure>
-      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/20240229_124851.jpg" alt="Edgard Marx defending his PhD thesis. He is standing infront of a chalkboard that shows a projection of his presentation" style="width:100%">
-      <figcaption>Edgard Marx giving his presentation</figcaption>
-      </figure>
-      </div>
-
-      <figure>
-      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/IMG_3952.jpg" alt="Edgard Marx defending his PhD thesis. He is standing infront of a chalkboard that shows a projection of his presentation" style="width:100%; padding-right:5%">
-      <figcaption>Edgard Marx giving his presentation</figcaption>
-      </figure>
-
-      <figure>
-      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/20240229_124851.jpg" alt="Edgard Marx defending his PhD thesis. He is standing infront of a chalkboard that shows a projection of his presentation" style="width:100%">
-      <figcaption>Edgard Marx giving his presentation</figcaption>
-      </figure>
+        <figure>
+        <img src="https://aksw.github.io/DINOBBIO.website/blog/images/20240229_124851.jpg" style="width:100%; min-width:230px;">
+        </figure>
       </div>
 
       <p> <b>Parabéns and congratulations, Dr. Edgard Luíz Marx on completing this milestone of your academic career so successfully!</b>  </p>
 
       <figure>
-      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/20240229_143126.jpg" alt="Edgard Marx defending his PhD thesis. He is standing infront of a chalkboard that shows a projection of his presentation" style="width:100%">
+      <img src="https://aksw.github.io/DINOBBIO.website/blog/images/20240229_143126.jpg" style="width:100%">
       <figcaption>In the middle from left to right: Prof. Dr. Thomas Riechert, Dr. Edgard Marx, Jonas Gwdosz, István Moscy</figcaption>
       </figure>
 
