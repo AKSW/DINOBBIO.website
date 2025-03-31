@@ -6,6 +6,39 @@
     <link>https://aksw.github.io/DINOBBIO.website</link>
     <description> Discovering Natural Inspired Products from Brazilian Biodiversity</description>
 
+            <item>
+      <title>Paulo do Carmo to Present Work on Natural Product Knowledge Extraction at SAC 2025 </title>
+      <link>https://aksw.github.io/DINOBBIO.website/blog.html#Ua3Sem</link>
+      <dc:creator>Dominique Fischer</dc:creator>
+      <dc:date>2025-03-31</dc:date>
+      <dc:language>en</dc:language>
+      <description> SAC 2025 in Catania, Sicily </description>
+      <content:encoded><![CDATA[
+<p>We’re excited to share that our colleague Paulo do Carmo will be presenting his latest research at the ACM Symposium on Applied Computing (SAC 2025) in Catania, Italy. His paper, titled "Improving Natural Product Knowledge Extraction from Academic Literature with Enhanced PDF Text Extraction and Large Language Models", tackles a critical bottleneck in the field of bioinformatics and drug discovery.
+The biodiversity of tropical environments like Brazil offers immense potential for novel drug development based on natural products. Yet, one of the ongoing challenges remains: how to efficiently update compound databases such as the Brazilian Biodiversity Natural Products Database (NUBBEDB), which are often populated manually based on academic literature.
+In this work, Paulo and his co-authors Marcos Paulo Silva Gôlo, Jonas Gwozdz, Edgard Marx and Ricardo Marcondes Marcacini build on the NatUKE benchmark, a recent initiative that leverages a knowledge graph version of NUBBEDB and evaluates different knowledge graph embedding models for automatic information extraction. While NatUKE already employs advanced embedding propagation models using pre-trained language models, <br>this new study explores two key enhancements:</p>
+<ul>
+<li>Improved text extraction from scientific PDFs, a known weak link in automated data pipelines.</li>
+<li>Large Language Models (LLMs) for generating richer, more semantically informed node embeddings.</li>
+</ul>
+<p>
+The results are promising: the proposed approach outperforms the current state-of-the-art on 3 out of 5 evaluated features while remaining competitive on the others. This marks a significant step forward in semi-automated curation of natural product databases, enabling faster and more scalable knowledge acquisition from the scientific literature. <br>
+We’re proud to see Paulo representing our group and contributing to this important field at such a prestigious venue. Congratulations, and buona fortuna in Catania!</p>
+
+<href> https://www.sigapp.org/sac/sac2025/program.php </href>
+
+<figure>
+<img src"blog\images\20240418_150013.jpg">
+<figcaption> Dr. Edward Marx and Sebastian Hellmann from DBpedia </figcaption
+</figure>
+
+
+
+      ]]></content:encoded>
+      <category>News</category>
+      <category>Knowledge Graphs</category>
+    </item>
+
         <item>
       <title>AKSW Group visits DataWeek Leipzig 2024 and 12th Semantic Web Day Leipzig </title>
       <link>https://aksw.github.io/DINOBBIO.website/blog.html#Ua3Sem</link>
